@@ -1,0 +1,31 @@
+.picture {
+    position: fixed;
+    bottom: -120px;
+    right: 2%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    /* background-image: url('img/marcel.jpg'); */
+    background-size: cover;
+    background-position: center;
+    animation: pop-up 2s infinite;
+}
+
+@keyframes pop-up {
+    0% {
+        bottom: -120px;
+    }
+    50% {
+        bottom: 3%;
+    }
+    100% {
+        bottom: -120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .picture {
+        width: 60px;
+        height: 60px;
+    }
+}
